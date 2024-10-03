@@ -17,19 +17,6 @@
     <li><strong>Figma</strong>: Design e prototipação visual</li>
   </ul>
   
-  <h2 id="estrutura-do-projeto">🗂 Estrutura do Projeto</h2>
-  <pre><code>
-/WebPortfolio
-│
-├── /Elementos
-├── /Imagens
-├── index.html
-├── README.md
-├── script.js
-├── style.css
-└── styleguide.css
-  </code></pre>
-
   <h2 id="contato">✉️ Contato</h2>
   <p>Se você deseja entrar em contato ou colaborar em algum projeto, sinta-se à vontade para me mandar uma mensagem:</p>
   <ul>
