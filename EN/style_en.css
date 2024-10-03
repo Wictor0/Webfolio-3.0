@@ -1,0 +1,1424 @@
+/* Base de tudo */
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dadada; /* Garante que o fundo se aplique a toda a página */
+  overflow-x: hidden; /* Esconde as barras brancas laterais */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.element {
+  width: 100%;
+  max-width: 100vw; /* Evita que o elemento ultrapasse a largura da tela */
+}
+
+.desktop-PT-BR {
+  min-height: 100vh; /* Garante que cubra pelo menos o tamanho da tela */
+  background-color: #dadada; /* Cor de fundo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante que o conteúdo se expanda entre topo e rodapé */
+  width: 100%;
+  overflow-x: hidden; /* Evita barras de rolagem horizontais */
+}
+
+.desktop-PT-BR .div {
+  flex-grow: 1; /* Faz o conteúdo crescer e ocupar a altura restante */
+  min-height: 100%; /* Alinhado à altura do container pai */
+  width: 100%; /* Garante que ocupe 100% da largura */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  background-color: #dadada; /* Aplica a cor de fundo aqui também */
+}
+
+/* TOPBAR */
+
+.desktop-PT-BR .topbarshade {
+  position: fixed;
+  max-width: 1920px;
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 998;
+}
+
+.desktop-PT-BR .topbar {
+  position: fixed;
+  width: 88vw;
+  max-width: 1640px;
+  top: 4vw;
+  left: 5vw;
+  z-index: 999;
+}
+
+.desktop-PT-BR .LOGO {
+  position: absolute;
+  width: 100%;
+  max-width: 1640px;
+}
+
+.desktop-PT-BR .sections {
+  position: absolute;
+  width: 100%;
+  max-width: 855px;
+  top: 0.4vw;
+  left: 36vw;
+}
+
+.desktop-PT-BR .sections-2 {
+  position: absolute;
+  width: 100%;
+  max-width: 399px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-PT-BR .home_topbar {
+  position: absolute;
+  width: 66px;
+  height: 37px;
+  top: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .home_topbar:hover {
+  position: absolute;
+  width: 66px;
+  height: 37px;
+  top: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .sobremim_topbar {
+  position: absolute;
+  width: 100px;
+  height: 37px;
+  top: 0;
+  left: 99px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .sobremim_topbar:hover {
+  position: absolute;
+  width: 106px;
+  height: 37px;
+  top: 0;
+  left: 97px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .portifolio_topbar {
+  position: absolute;
+  width: 82px;
+  height: 37px;
+  top: 0;
+  left: 228px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+.desktop-PT-BR .portifolio_topbar:hover {
+  position: absolute;
+  width: 82px;
+  height: 37px;
+  top: 0;
+  left: 228px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .skills_topbar {
+  width: 51px;
+  height: 37px;
+  top: 0;
+  left: 342px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .skills_topbar:hover {
+  width: 51px;
+  height: 37px;
+  top: 0;
+  left: 340px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .carreira_topbar {
+  position: absolute;
+  width: 75px;
+  height: 37px;
+  top: 0;
+  left: 424px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .carreira_topbar:hover {
+  position: absolute;
+  width: 75px;
+  height: 37px;
+  top: 0;
+  left: 422px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .contato_topbar {
+  position: absolute;
+  width: 86px;
+  height: 37px;
+  top: 0;
+  left: 528px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .contato_topbar:hover {
+  position: absolute;
+  width: 86px;
+  height: 37px;
+  top: 0;
+  left: 528px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .linguagem {
+  position: absolute;
+  width: 138px;
+  height: 37px;
+  top: 0;
+  left: 645px;
+}
+
+.desktop-PT-BR .usa-flag {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 7px;
+  left: 110px;
+}
+
+.desktop-PT-BR .brazil-flag {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 7px;
+  left: 31px;
+}
+
+.desktop-PT-BR .Spk_EN {
+  position: absolute;
+  width: 26px;
+  height: 37px;
+  top: 0;
+  left: 78px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .Spk_EN:hover {
+  position: absolute;
+  width: 26px;
+  height: 37px;
+  top: 0;
+  left: 78px;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .Spk_PT {
+  position: absolute;
+  width: 28px;
+  height: 37px;
+  top: 0;
+  left: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .Spk_PT:hover {
+  position: absolute;
+  width: 28px;
+  height: 37px;
+  top: 0;
+  left: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f638080;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+}
+
+/* Modo Noite (para depois)
+
+.desktop-PT-BR .modonoite {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 3px;
+  left: 810px;
+  border: none;
+  background-color: transparent;
+}
+*/
+
+/* Home, avatar e tals */
+
+.desktop-PT-BR .avatar-and-icons {
+  position: absolute;
+  width: 38vw;
+  max-width: 656px;
+  top: 15vw;
+  left: 35vw;
+}
+
+.desktop-PT-BR .desenvolvedor-front {
+  position: absolute;
+  width: 100%;
+  max-width: 411px;
+  top: 36.653645833333336vw;
+  left: 9.114583333333334vw;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .group-15 {
+  position: absolute;
+  width: 100%;
+  max-width: 150px;
+  top: 40.755208333333336vw;
+  left: 9.114583333333334vw;
+}
+
+.desktop-PT-BR .linkedin_top {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .github_top {
+  position: absolute;
+  width: 100%;
+  max-width: 45px;
+  height: 2.4739583333333335vw;
+  left: 3.8411458333333335vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .instagram_top {
+  position: absolute;
+  width: 100%;
+  max-width: 45px;
+  height: 2.4739583333333335vw;
+  left: 7.682291666666667vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* formas de contato do home */
+
+.desktop-PT-BR .group-2 {
+  position: absolute;
+  width: 100%;
+  max-width: 196px;
+  top: 32.682291666666664vw;
+  left: 80vw;
+}
+
+.desktop-PT-BR .div-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 198px;
+  top: 1.8880208333333333vw;
+  left: 0;
+}
+
+.desktop-PT-BR .overlap-group-4 {
+  position: relative;
+  width: 100%;
+  height: 2.8645833333333335vw;
+  max-width: 196px;
+  max-height: 44px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #5f638080;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .overlap-group-4:hover {
+  position: relative;
+  width: 100%;
+  height: 2.8645833333333335vw;
+  max-width: 196px;
+  max-height: 44px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #ceced1;
+  background-color: #ceced1;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .text-wrapper-8 {
+  position: absolute;
+  width: auto;
+  top: 0.8463541666666666vw;
+  left: 3.0598958333333335vw;
+  font-family: "Raleway-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #5f6380;
+  font-size: 1.15em;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop-PT-BR .ic-baseline-whatsapp {
+  position: absolute;
+  width: auto;
+  top: 0.5859375vw;
+  left: 0.9765625vw;
+}
+
+/* Baixar currículo */
+
+.desktop-PT-BR .CV-download {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 4vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .text-wrapper-9 {
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  font-family: "Raleway-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #676b86;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .material-symbols {
+  position: absolute;
+  width: auto;
+  top: 0;
+  right: 4.8vw;
+}
+
+/* sessão home, algumas partes */
+
+.desktop-PT-BR .top-section {
+  position: absolute;
+  width: 100%;
+  max-width: 411px;
+  top: 23.372395833333332vw;
+  left: 9.114583333333334vw;
+}
+
+.desktop-PT-BR .top-home-texts {
+  position: relative;
+  width: 100%;
+  max-width: 413px;
+}
+
+.desktop-PT-BR .bem-vindo {
+  position: relative;
+  width: 8vw;
+  max-width: 140px;
+}
+
+.desktop-PT-BR .wictor-melo {
+  position: absolute;
+  width: 100%;
+  max-width: 411px;
+  top: 4.4921875vw;
+  left: 0;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 4em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Sessão sobre mim */
+
+.desktop-PT-BR .about-me-section {
+  position: absolute;
+  width: 100%;
+  top: 60vw;
+}
+
+.desktop-PT-BR .about-me {
+  position: absolute;
+  width: 100%;
+  top: 3vw;
+  left: 40vw;
+}
+
+.desktop-PT-BR .wictor-mannuel {
+  width: 100%;
+  max-width: 663px;
+  margin-top: 2vw;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 3vw;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .sobremimicone {
+  position: absolute;
+  width: 8vw;
+  max-width: 162px;
+  max-height: 45px;
+  bottom: 11vw;
+}
+
+.desktop-PT-BR .sou-formado-em-t {
+  position: absolute;
+  width: 100%;
+  max-width: 780px;
+  top: 10vw;
+  left: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1vw;
+  letter-spacing: 0;
+  line-height: 1.5vw;
+}
+
+.desktop-PT-BR .profile-pic {
+  position: relative;
+  width: 25vw;
+  max-width: 468px;
+  top: 2.5vw;
+  left: 172px;
+}
+
+.desktop-PT-BR .line {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  left: 0%;
+}
+
+.desktop-PT-BR .img {
+  position: absolute;
+  top: 32vw;
+  width: 100%;
+  object-fit: cover;
+  left: 0%;
+}
+
+/* Quadrinhos de experiência */
+
+.desktop-PT-BR .experience-section {
+  position: absolute;
+  width: 100%;
+  max-width: 898px;
+  top: 98vw;
+  left: 22vw;
+}
+
+.desktop-PT-BR .computacao {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop-PT-BR .overlap {
+  position: relative;
+  width: 100%;
+}
+
+.desktop-PT-BR .overlap-group-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop-PT-BR .estudo {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 21.223958333333332vw;
+}
+
+.desktop-PT-BR .redes {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 42.447916666666664vw;
+}
+
+/* Portifólio */
+
+.desktop-PT-BR .portflio-title-2 {
+  position: absolute;
+  width: 100%;
+  max-width: 482px;
+  top: 120vw;
+  left: 35vw;
+}
+
+.desktop-PT-BR .text-wrapper-39 {
+  position: absolute;
+  width: 100%;
+  max-width: 480px;
+  top: 4.361979166666667vw;
+  left: 0;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 3em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .group-16 {
+  width: 8vw;
+  max-width: 146px;
+  left: 10.7421875vw;
+  position: absolute;
+  top: 0;
+}
+
+.desktop-PT-BR .overlap-group-8 {
+  position: relative;
+  width: 8vw;
+  background-image: url(./img/rectangle-3-2.svg);
+  background-size: 100% 100%;
+}
+
+.desktop-PT-BR .text-wrapper-40 {
+  position: absolute;
+  width: 8vw;
+  top: 0.5208333333333334vw;
+  left: 0.6510416666666666vw;
+}
+
+.desktop-PT-BR .work-cads-list {
+  position: absolute;
+  width: 50.520833333333336vw;
+  top: 135vw;
+  left: 25vw;
+}
+
+.desktop-PT-BR .work-card {
+  position: absolute;
+  width: 100%;
+  max-width: 364px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .overlap-6 {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.desktop-PT-BR .rectangle {
+  position: absolute;
+  width: 100%;
+  max-width: 360px;
+  top: 0;
+  left: 0;
+}
+
+.desktop-PT-BR .text-wrapper-43 {
+  position: absolute;
+  width: 100%;
+  max-width: 168px;
+  top: 1.7578125vw;
+  left: 1.953125vw;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f6380;
+  font-size: 1.25em;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+}
+
+.desktop-PT-BR .text-wrapper-44 {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  top: 3.9713541666666665vw;
+  left: 1.953125vw;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 0.88em;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+}
+
+.desktop-PT-BR .work-card-2 {
+  position: absolute;
+  width: 100%;
+  max-width: 364px;
+  top: 0;
+  left: 27.083333333333332vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .overlap-8 {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.desktop-PT-BR .overlap-9 {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  top: 3.9713541666666665vw;
+  left: 1.953125vw;
+}
+
+.desktop-PT-BR .overlap-10 {
+  position: relative;
+  width: 100%;
+  max-width: 106px;
+  background-image: url(./img/rectangle-3-4.svg);
+  background-size: 100% 100%;
+}
+
+.desktop-PT-BR .text-wrapper-45 {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  top: 0;
+  left: 0;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 0.88em;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+}
+
+/* Skills, techs do dia a dia e etc */
+
+.desktop-PT-BR .skills {
+  position: absolute;
+  width: 100%;
+  top: 180vw;
+  text-align: center;
+}
+
+.desktop-PT-BR .portflio-title {
+  position: absolute;
+  width: 100%;
+}
+
+.desktop-PT-BR .text-wrapper-10 {
+  position: absolute;
+  width: 100%;
+  top: 4.4921875vw;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .group-3 {
+  position: absolute;
+  width: 6vw;
+  max-width: 234px;
+  right: 46vw;
+}
+
+.desktop-PT-BR .work-techs {
+  position: absolute;
+  width: 100%;
+  top: 13.020833333333334vw;
+}
+
+.desktop-PT-BR .p {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .working-techs {
+  width: 100%;
+  max-width: 537px;
+  text-align: center;
+}
+
+.desktop-PT-BR .diaadia {
+  position: absolute;
+  width: 100%;
+  max-width: 537px;
+  top: 6.510416666666667vw;
+  right: 32vw;
+}
+
+.desktop-PT-BR .other-techs {
+  position: absolute;
+  width: 100%;
+  top: 28.385416666666668vw;
+  left: 32vw;
+  max-width: 531px;
+}
+
+.desktop-PT-BR .text-wrapper-12 {
+  position: absolute;
+  width: 100%;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .projects-techs {
+  position: absolute;
+  width: 100%;
+  max-width: 334px;
+  top: 82px;
+}
+
+.desktop-PT-BR .jatrabalhei {
+  position: absolute;
+  width: 100%;
+  max-width: 334px;
+  top: 1vw;
+  left: 5vw;
+  right: 0%;
+}
+
+/* Carreira (Acadêmica e Profissional) */
+
+.desktop-PT-BR .career {
+  position: absolute;
+  width: 100%;
+  max-width: 1640px;
+  top: 230vw;
+  text-align: center;
+}
+
+.desktop-PT-BR .carrer-title {
+  position: absolute;
+  width: 43.294270833333336vw;
+  max-width: 665px;
+  left: 28vw;
+}
+
+.desktop-PT-BR .carreira {
+  position: relative;
+  width: 7vw;
+}
+
+.desktop-PT-BR .professional-exp {
+  position: absolute;
+  width: 100%;
+  top: 12.565104166666666vw;
+  left: 0;
+}
+
+.desktop-PT-BR .group-5 {
+  position: relative;
+  width: 100%;
+}
+
+.desktop-PT-BR .text-wrapper-14 {
+  position: absolute;
+  width: 100%;
+  max-width: 820px;
+  right: 50vw;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .academic-exp {
+  position: absolute;
+  width: 100%;
+  max-width: 821px;
+  top: 12.565104166666666vw;
+  left: 50vw;
+}
+
+.desktop-PT-BR .text-wrapper-15 {
+  position: absolute;
+  width: 100%;
+  font-family: "Raleway-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #5f6380;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .text-wrapper-16 {
+  position: absolute;
+  width: 100%;
+  top: 3.125vw;
+  transform: rotate(-0.03deg);
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .overlap-wrapper {
+  position: absolute;
+  width: 30vw;
+  max-width: 588px;
+  top: 22.330729166666668vw;
+  left: 61.328125vw;
+}
+
+.desktop-PT-BR .overlap-2 {
+  position: relative;
+  width: 30vw;
+  max-width: 580px;
+}
+
+.desktop-PT-BR .caixas {
+  position: absolute;
+  width: 30vw;
+  max-width: 580px;
+  top: 22.330729166666668vw;
+  left: 7.877604166666667vw;
+}
+
+.desktop-PT-BR .group-6 {
+  position: absolute;
+  width: 30vw;
+  max-width: 586px;
+  top: 40.8203125vw;
+  left: 61.328125vw;
+}
+
+.desktop-PT-BR .group-8 {
+  position: absolute;
+  width: 30vw;
+  max-width: 580px;
+  top: 40.8203125vw;
+  left: 7.877604166666667vw;
+}
+
+/* Vamos Conversar */
+
+.desktop-PT-BR .contact {
+  position: absolute;
+  width: 100%;
+  max-width: 663px;
+  top: 290vw;
+  left: 28vw;
+  a[disabled="disabled"] {
+    pointer-events: none;
+  }
+}
+
+.desktop-PT-BR .contact-2 {
+  position: absolute;
+  width: 100%;
+}
+
+.desktop-PT-BR .group-10 {
+  width: 100%;
+  max-width: 140px;
+  left: 17.057291666666668vw;
+  position: absolute;
+  height: 2.9296875vw;
+  top: 0;
+}
+
+.desktop-PT-BR .text-wrapper-34 {
+  position: absolute;
+  width: 100%;
+  max-width: 118px;
+  top: 0.3255208333333333vw;
+  left: 0.6510416666666666vw;
+  font-family: "Raleway-Bold", Helvetica;
+  font-weight: 700;
+  color: #5f6380;
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .group-wrapper {
+  position: absolute;
+  width: 100%;
+  max-width: 289px;
+  top: 12.565104166666666vw;
+  left: 21.484375vw;
+}
+
+.desktop-PT-BR .group-11 {
+  position: relative;
+  height: 22.014388489208635vh;
+}
+
+.desktop-PT-BR .group-12 {
+  position: absolute;
+  width: 19.075520833333332vw;
+  max-width: 294px;
+}
+
+.desktop-PT-BR .text-wrapper-35 {
+  position: absolute;
+  width: 100%;
+  max-width: 92px;
+  top: 2.8645833333333335vw;
+  left: 6.4453125vw;
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f6380;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .text-wrapper-36 {
+  position: absolute;
+  width: 289px;
+  max-width: 289px;
+  top: 4.947916666666667vw;
+  left: 0;
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.desktop-PT-BR .paper-plane-tilt {
+  position: absolute;
+  width: 100%;
+  max-width: 40px;
+  left: 8.138020833333334vw;
+}
+
+.desktop-PT-BR .copy-simple {
+  position: absolute;
+  width: 100%;
+  max-width: 32px;
+  top: 7.877604166666667vw;
+  left: 8.3984375vw;
+}
+
+.desktop-PT-BR .group-13 {
+  position: absolute;
+  width: 16.145833333333332vw;
+  height: 3.90625vw;
+  top: 15.625vw;
+  left: 2.8645833333333335vw;
+}
+
+.desktop-PT-BR .zapbotao {
+  position: relative;
+  width: 100%;
+  max-width: 246px;
+  height: 8.633093525179856vh;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #5f638080;
+  background-color: transparent;
+  cursor: pointer;
+}
+.desktop-PT-BR .zapbotao:hover {
+  position: relative;
+  width: 100%;
+  max-width: 246px;
+  height: 8.633093525179856vh;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #ceced1;
+  background-color: #ceced1;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .text-wrapper-37 {
+  width: 100%;
+  max-width: 170px;
+  top: 1.0416666666666667vw;
+  left: 3.5807291666666665vw;
+  font-family: "Raleway-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #5f638080;
+  font-size: 1.5em;
+  position: absolute;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .whatsapp-logo {
+  position: absolute;
+  width: 100%;
+  max-width: 38px;
+  height: 38px;
+  top: 0.6510416666666666vw;
+  left: 0.9114583333333334vw;
+}
+
+.desktop-PT-BR .group-14 {
+  position: absolute;
+  width: 100%;
+  max-width: 175px;
+  height: 2.4088541666666665vw;
+  top: 26.692708333333332vw;
+  left: 15.8203125vw;
+}
+
+.desktop-PT-BR .back-to-the-top {
+  position: absolute;
+  width: 100%;
+  max-width: 137px;
+}
+
+.desktop-PT-BR .text-wrapper-38 {
+  position: absolute;
+  width: 100%;
+  max-width: 145px;
+  top: 0.2vw;
+  font-family: "Raleway-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #5f638080;
+  font-size: 1.1em;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .arrow-up {
+  position: absolute;
+  width: 100%;
+  max-width: 32px;
+  top: 0.06510416666666667vw;
+  left: 4.6875vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* DownBar */
+
+.desktop-PT-BR .footer {
+  position: absolute;
+  width: 100vw; /* Garante que o container ocupe 100% da largura da tela */
+  max-width: 100vw; /* Impede que ultrapasse a largura da janela de visualização */
+  top: 325vw;
+  text-align: center;
+  background-color: transparent;
+}
+
+.desktop-PT-BR .overlap-4 {
+  position: relative;
+  width: 100%;
+  height: 5.729166666666667vw;
+  background-color: #5f63801a;
+}
+
+.desktop-PT-BR .copyright {
+  position: absolute;
+  width: 100%;
+  max-width: 457px;
+  top: 1.3020833333333333vw;
+  font-family: "Raleway-Regular", Helvetica;
+  font-weight: 400;
+  color: #5f638080;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop-PT-BR .redes_downbar {
+  position: absolute;
+  text-align: center;
+}
+
+.desktop-PT-BR .linkedin_downbar {
+  position: absolute;
+  width: 100%;
+  max-width: 45px;
+  top: 1.4973958333333333vw;
+  left: 43vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .github_downbar {
+  position: absolute;
+  width: 100%;
+  top: 1.4973958333333333vw;
+  left: 47vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desktop-PT-BR .instagram_downbar {
+  position: absolute;
+  width: 100%;
+  top: 1.4973958333333333vw;
+  left: 51vw;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .desktop-PT-BR .topbar {
+    width: 90vw; /* Ajustar a largura da barra */
+    top: 3vw;
+    left: 5vw;
+  }
+
+  .desktop-PT-BR .avatar-and-icons {
+    width: 80vw; /* Ajustar o tamanho do avatar */
+    left: 10vw; /* Centralizar */
+  }
+
+  .desktop-PT-BR .wictor-melo {
+    font-size: 2.5em; /* Reduzir o tamanho do texto */
+  }
+
+  .desktop-PT-BR .sobremim_topbar {
+    width: 80px;
+    left: 85px; /* Ajuste o posicionamento */
+  }
+
+  /* Ajustes adicionais para layout */
+  .desktop-PT-BR .sobre-mim,
+  .desktop-PT-BR .portflio-title {
+    max-width: 90vw;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .desktop-PT-BR .footer {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .desktop-PT-BR .topbar {
+    width: 95vw;
+    top: 2vw;
+    left: 2.5vw;
+  }
+
+  .desktop-PT-BR .wictor-melo {
+    font-size: 2em; /* Mais ajustes para tamanhos menores */
+  }
+
+  .desktop-PT-BR .avatar-and-icons {
+    width: 70vw;
+    left: 15vw;
+  }
+
+  /* Ajuste o conteúdo para evitar overflow */
+  .desktop-PT-BR .skills,
+  .desktop-PT-BR .projects-techs {
+    max-width: 90vw;
+    padding: 15px;
+  }
+}
